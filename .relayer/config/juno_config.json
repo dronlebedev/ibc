@@ -1,0 +1,8 @@
+{
+  "chain-id": "lucina",
+  "rpc-addr": "http://127.0.0.1:26757",
+  "account-prefix": "juno",
+  "gas-adjustment": 1.5,
+  "gas-prices": "0.0025juno",
+  "trusting-period": "10m"
+}
