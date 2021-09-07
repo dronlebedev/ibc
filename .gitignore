@@ -1,0 +1,7 @@
+relayer/
+go/
+.ssh/
+.cache/
+.relayer/keys/
+.relayer/light/
+.sudo_as_admin_successful
