@@ -1,6 +1,6 @@
 global:
   api-listen-addr: :5183
-  timeout: 60s
+  timeout: 30s
   light-cache-size: 20
 chains:
 - key: lucina
@@ -9,14 +9,14 @@ chains:
   account-prefix: juno
   gas-adjustment: 1.5
   gas-prices: 5ujuno
-  trusting-period: 1m
+  trusting-period: 48h
 - key: kichain
   chain-id: kichain-t-4
   rpc-addr: http://127.0.0.1:26657
   account-prefix: tki
   gas-adjustment: 1.5
   gas-prices: 5utki
-  trusting-period: 1m
+  trusting-period: 48h
 paths:
   transfer:
     src:
