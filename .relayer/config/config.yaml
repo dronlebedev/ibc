@@ -1,0 +1,39 @@
+global:
+  api-listen-addr: :5183
+  timeout: 60s
+  light-cache-size: 20
+chains:
+- key: lucina
+  chain-id: lucina
+  rpc-addr: http://127.0.0.1:26757
+  account-prefix: juno
+  gas-adjustment: 1.5
+  gas-prices: 5ujuno
+  trusting-period: 1m
+- key: kichain
+  chain-id: kichain-t-4
+  rpc-addr: http://127.0.0.1:26657
+  account-prefix: tki
+  gas-adjustment: 1.5
+  gas-prices: 5utki
+  trusting-period: 1m
+paths:
+  transfer:
+    src:
+      chain-id: kichain-t-4
+      client-id: 07-tendermint-47
+      connection-id: connection-15
+      channel-id: channel-57
+      port-id: transfer
+      order: UNORDERED
+      version: ics20-1
+    dst:
+      chain-id: lucina
+      client-id: 07-tendermint-14
+      connection-id: connection-14
+      channel-id: channel-8
+      port-id: transfer
+      order: UNORDERED
+      version: ics20-1
+    strategy:
+      type: naive
